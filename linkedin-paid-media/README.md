@@ -6,11 +6,11 @@ A system for comparing creative, investigating ad performance, and delivering do
 
 **My role:** Identified the problem through stakeholder interviews, designed the solution, and built the SQL models, creative tagging, conversational agent, and API integrations. Tested and refined the system with the paid-media owner.
 
-**Built with:** Snowflake (Cortex), Boomi, LinkedIn CAPI, and Slack.
+**Built with:** Snowflake (Cortex), an integration platform, LinkedIn CAPI, and Slack.
 
 **Partners:** Data engineering owned raw ingestion. The paid-media owner evaluated the outputs and made campaign and budget decisions.
 
-**Impact:** LinkedIn lead volume up 43% and cost per lead down 28% year over year, alongside eight hours of reporting work saved per week, confirmed by the paid-media owner. The performance gains reflect multiple changes across the program; see the reporting period and context below.
+**Impact:** Reduced manual reporting and informed meaningful improvements in lead volume, cost efficiency, creative decisions, and budget allocation. The performance gains reflect multiple changes across the program.
 
 ## The problem
 
@@ -33,7 +33,7 @@ flowchart LR
     E <--> F[Paid-media owner<br/>in Slack]
 ```
 
-The models, tagging, analytical views, and agent live in Snowflake. A semantic model and verified queries guide Cortex; Boomi connects it to Slack. Two kinds of attributes make performance comparable across ads:
+The models, tagging, analytical views, and agent live in Snowflake. A semantic model and verified queries guide Cortex; an integration platform connects it to Slack. Two kinds of attributes make performance comparable across ads:
 
 - **Rule-based attributes:** Derive targeting, region/country, segment, and ad type from naming conventions; classify copy length by word count and content type from the landing-page URL.
 - **AI creative attributes:** Classify qualitative features such as theme, tone, value proposition, hook style, and CTA or headline style.
@@ -43,12 +43,12 @@ The models, tagging, analytical views, and agent live in Snowflake. A semantic m
 ```mermaid
 flowchart LR
     A[CRM outcomes] --> B[Eligible events<br/>in Snowflake]
-    B --> C[LinkedIn CAPI<br/>via Boomi]
+    B --> C[LinkedIn CAPI<br/>via integration platform]
     C -->|Confirmed success| D[Successful-send<br/>ledger]
     D -->|Exclude sent events| B
 ```
 
-I prepared conversion events in Snowflake and built the Boomi integration to map and send them to LinkedIn, with retries, throttling, and a ledger of successful sends. The ledger records accepted delivery; LinkedIn separately determines campaign attribution.
+I prepared conversion events in Snowflake and built the integration-platform workflow to map and send them to LinkedIn, with retries, throttling, and a ledger of successful sends. The ledger records accepted delivery; LinkedIn separately determines campaign attribution.
 
 ## Decisions that mattered
 
@@ -58,9 +58,9 @@ I prepared conversion events in Snowflake and built the Boomi integration to map
 
 ## Evidence and outcomes
 
-- **More leads at lower cost:** LinkedIn lead volume increased 43% and cost per lead fell 28% for February 1–October 3 compared with the same period the previous year. These program results reflect the system alongside targeting, campaign optimization, and other strategic changes; its individual contribution was not isolated.
-- **Less manual reporting:** Eight hours saved per week, confirmed by the paid-media owner during an impact review with their manager.
-- **Better-informed budget allocation:** With overall budget broadly unchanged year over year, better visibility into downstream conversions informed a shift from roughly 80% to 60% of spend on lead-generation formats, with more going toward retargeting and conversion-focused campaigns. The paid-media owner made these decisions.
+- **More leads at lower cost:** The program saw meaningful year-over-year improvement in lead volume and cost efficiency. These results reflect the system alongside targeting, campaign optimization, and other strategic changes; its individual contribution was not isolated.
+- **Less manual reporting:** The system substantially reduced the paid-media owner's recurring reporting workload.
+- **Better-informed budget allocation:** Better visibility into downstream conversions informed a shift in spend from lead-generation formats toward retargeting and conversion-focused campaigns. The paid-media owner made these decisions.
 - **Action on creative fatigue:** Analysis helped the paid-media owner identify signs of fatigue in retargeting ads and reallocate spend, using metrics appropriate to the campaign's objective.
 
 Results are based on reported program figures and stakeholder feedback. Improvement in fatigue-detection speed was not measured.

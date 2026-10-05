@@ -54,10 +54,10 @@ Review also serves an analytical purpose: working through the evidence helps me 
 
 The system gave marketing and sales a shared evidence base for messaging, campaign development, and planning. Its outputs were used in several ways:
 
-- **Campaign creative:** Customer language from the curated quote library informed live advertising.
-- **Sales enablement:** The analysis informed the configuration of an AI-assisted outbound tool implemented by another owner.
-- **Program planning:** Teams incorporated the findings into planning materials to guide strategy.
-- **Ongoing insight:** Content and product marketing stakeholders requested continued access to the analysis and recurring updates.
+- **Campaign development:** Curated customer language and recurring patterns informed messaging and creative development.
+- **Sales enablement:** Structured findings supported an AI-assisted prospecting workflow implemented by another owner.
+- **Program planning:** Aggregate themes gave stakeholders a shared evidence base for prioritization and strategy.
+- **Ongoing learning:** Repeatable updates made the analysis a continuing input rather than a one-time project.
 
 My contribution extended from building the system to interpreting and presenting its findings so teams could apply them. Its value is demonstrated through adoption across these workflows; a separate revenue contribution was not measured.
 

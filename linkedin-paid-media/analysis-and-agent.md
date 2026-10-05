@@ -2,7 +2,7 @@
 
 # Ad analysis, creative tagging, and conversational access
 
-I built the Snowflake data models, creative classification, and conversational agent that let the paid-media owner compare ad performance by region, audience, and message. A Slack application connected through Boomi made that analysis accessible through questions and follow-ups.
+I built the Snowflake data models, creative classification, and conversational agent that let the paid-media owner compare ad performance by region, audience, and message. A Slack application connected through an integration platform made that analysis accessible through questions and follow-ups.
 
 I turned unstructured ad copy into consistent creative attributes, allowing the team to compare cost per lead by theme, value proposition, tone, and call to action.
 
@@ -16,7 +16,7 @@ Data engineering owned raw ingestion. I built the downstream components:
 | AI creative tagging | Classify theme, value proposition, tone, and call to action so they can be compared across ads. |
 | Metric and volume rules | Match comparisons to campaign goals, regional budgets, and available activity. |
 | Cortex agent | Answer questions using a semantic model of business definitions and verified example queries. |
-| Slack and Boomi integration | Receive questions, call Cortex, and return answers with conversational follow-up. |
+| Slack and integration-platform workflow | Receive questions, call Cortex, and return answers with conversational follow-up. |
 
 ## Key decisions
 
@@ -28,10 +28,10 @@ Data engineering owned raw ingestion. I built the downstream components:
 
 **Prioritize interactive analysis.** A scheduled analyst/strategist workflow struggled to cover every region and ad type within its output limit. We retired it in favor of stakeholder-led questions, giving up the proactive weekly brief.
 
-**Separate acknowledgement from execution.** The Boomi listener acknowledged Slack requests promptly while a separate process handled the slower Cortex response.
+**Separate acknowledgement from execution.** The integration listener acknowledged Slack requests promptly while a separate process handled the slower Cortex response.
 
 ## Validation and results
 
 Stakeholder reviews and repeated test questions guided changes to metrics, comparisons, and output usefulness. These checks did not establish a formal system-wide accuracy score or statistical significance for every trend.
 
-The system saves eight hours of reporting work per week, confirmed by the paid-media owner. Analysis informed budget reallocation and helped identify signs of creative fatigue in retargeting ads, prompting spend changes. [See the program results and supporting context](README.md#evidence-and-outcomes).
+The system substantially reduced recurring reporting work. Analysis informed budget reallocation and helped identify signs of creative fatigue in retargeting ads, prompting spend changes. [See the program results and supporting context](README.md#evidence-and-outcomes).
