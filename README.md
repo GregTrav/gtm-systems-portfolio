@@ -28,6 +28,24 @@ An agent-assisted workflow that returned hundreds of legitimately eligible recor
 
 A repeatable system that turns sales records and customer conversations into structured evidence about why customers bought—helping marketing ground messaging and campaigns in the problems behind revenue.
 
+## Exploratory labs
+
+Independent prototypes I designed and tested to explore how public evidence, automation, and AI could support GTM work. These were not internal production deployments. They demonstrate the hypotheses, architecture, testing, and trade-offs behind the systems.
+
+### [Account signal monitoring lab](account-signal-monitoring/README.md)
+
+A personal experiment in determining whether public company activity could reveal product-relevant needs across a defined account list.
+
+Rather than ranking companies merely because they were hiring, the system evaluated how the work described in public postings related to problems a product category could address. It retained the underlying evidence and produced a ranked digest for human review.
+
+**Built with:** Python, SQLite, public job and news sources, and AI-assisted coding.
+
+### [Account research to personalized video at scale](personalized-video-outbound/README.md)
+
+An implementation and extension of a personalized-video concept: research accounts at scale, develop an evidence-backed message for each one, and use voice cloning, an AI avatar, and Python-based composition to produce a distinct video of the seller speaking to every account.
+
+**Built with:** Clay, Codex, ElevenLabs, HeyGen, Python, Chrome DevTools, and ffmpeg.
+
 ## Writing
 
 [The Hidden Work Behind Reliable GTM AI](https://www.linkedin.com/pulse/hidden-work-behind-reliable-gtm-ai-greg-travers-b7nmc/)
