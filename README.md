@@ -44,6 +44,8 @@ Rather than ranking companies merely because they were hiring, the system evalua
 
 An implementation and extension of a personalized-video concept: research accounts at scale, develop an evidence-backed message for each one, and use voice cloning, an AI avatar, and Python-based composition to produce a distinct video of the seller speaking to every account.
 
+**[View the interactive system flow and watch the 54-second demo →](https://gregtrav.github.io/gtm-systems-portfolio/)**
+
 **Built with:** Clay, Codex, ElevenLabs, HeyGen, Python, Chrome DevTools, and ffmpeg.
 
 ## Writing
