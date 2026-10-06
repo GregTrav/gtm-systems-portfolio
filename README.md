@@ -1,6 +1,6 @@
 # GTM systems portfolio
 
-I'm Greg Travers, a GTM systems practitioner who turns ambiguous revenue problems into reliable data models, integrations, and AI-assisted workflows. My work starts with stakeholder discovery and continues through implementation, testing, and iteration with the people using it.
+I'm Greg Travers, a GTM systems builder who turns ambiguous revenue problems into reliable data models, integrations, and AI-assisted workflows. My work starts with stakeholder discovery and continues through implementation, testing, and iteration with the people using it.
 
 ## Selected work
 
