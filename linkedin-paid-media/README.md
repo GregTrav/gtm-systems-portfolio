@@ -67,5 +67,6 @@ Results are based on reported program figures and stakeholder feedback. Improvem
 
 ## Explore the reasoning
 
+- [View the data architecture →](architecture.md)
 - [Analysis, creative tagging, and the agent](analysis-and-agent.md)
 - [Sending downstream conversion data to LinkedIn](conversion-signals.md)
