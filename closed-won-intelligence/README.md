@@ -26,6 +26,8 @@ flowchart TD
     E --> G[Customer quote library]
 ```
 
+[View the data architecture →](architecture.md)
+
 I built a staged pipeline around closed-won, new-logo deals. It combined Salesforce evidence with sampled Gong transcripts, extracting customer pains and organizing each deal into defined dimensions:
 
 - The customer’s existing approach.
